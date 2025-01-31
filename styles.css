@@ -543,6 +543,10 @@ footer p {
 
 /* التكيف مع الأجهزة المحمولة */
 @media (max-width: 768px) {
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
     nav .nav-links {
         display: none;
         flex-direction: column;
@@ -552,13 +556,10 @@ footer p {
         left: 0;
         right: 0;
         padding: 1rem;
+        box-shadow: var(--box-shadow);
     }
 
     nav .nav-links.active {
-        display: flex;
-    }
-
-    nav .menu-toggle {
         display: flex;
     }
 
@@ -568,10 +569,15 @@ footer p {
 
     nav .nav-links a {
         font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+
+    nav .menu-toggle {
+        display: flex;
     }
 
     #about, #gallery, #icons, #news, #workshops, #contact {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
     }
 
     #about h2, #gallery h2, #icons h2, #news h2, #workshops h2, #contact h2 {
@@ -651,3 +657,6 @@ footer p {
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
