@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - تواصل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="login">
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+            <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+        <p id="loginMessage"></p>
+    </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("loginMessage").innerText = "تم تسجيل الدخول بنجاح!";
+        });
+    </script>
+</body>
+</html>

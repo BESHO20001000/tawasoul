@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تواصل الشبابية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav>
+        <div class="logo-container">
+            <img src="Main Logo-Full Color@2x.png" alt="شعار المنصة" class="logo">
+            <div class="logo-text">منصة تواصل</div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+            <li><a href="#gallery"><i class="fas fa-camera"></i> معرض الصور</a></li>
+            <li><a href="#icons"><i class="fas fa-project-diagram"></i> مشاريعنا</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper"></i> الأخبار</a></li>
+            <li><a href="#workshops"><i class="fas fa-chalkboard-teacher"></i> ورش العمل</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+        </ul>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <button id="dark-mode-toggle" aria-label="تبديل الوضع الداكن"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <!-- قسم من نحن -->
+    <section id="about">
+        <h2>من نحن</h2>
+        <div class="about-content">
+            <p>منصة تواصل الشبابية هي منصة غير ربحية تهدف إلى تمكين الشباب من خلال توفير فرص للتعلم والتواصل وتبادل الأفكار. نعمل على تعزيز الابتكار وريادة الأعمال بين الشباب من خلال ورش العمل والمشاريع المشتركة.</p>
+            <p>نحن نؤمن بقوة الشباب وقدرتهم على إحداث تغيير إيجابي في المجتمع. انضم إلينا وكن جزءًا من رحلتنا نحو مستقبل أفضل.</p>
+        </div>
+    </section>
+
+    <!-- معرض الصور -->
+    <section id="gallery">
+        <h2>معرض فعالياتنا</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img data-src="B1.jpg" class="lazy" alt="فعالية 1">
+                    <div class="slide-content">
+                        <h3>التقرير السنوي ل هيومن رايتس ووتش</h3>
+                        <p>في تقرير مراجعتها السنويه لحقوق الانسان</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img data-src="s1.jpg" class="lazy" alt="فعالية 2 " width="100" height="100">
+                    <div class="slide-content">
+                        <h3>نتواصل ..</h3>
+                        <p>لنقرب المسافات</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img data-src="image3.jpg" class="lazy" alt="فعالية 3">
+                    <div class="slide-content">
+                        <h3>معرض الابتكارات</h3>
+                        <p>عرض مشاريع الشباب المبتكرة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- مشاريع المنصة -->
+    <section id="icons">
+        <h2>مشاريعنا الرائدة</h2>
+        <div class="icon-container">
+            <a href="https://www.gop-iraq.org/abouts_us" target="_blank" class="icon">
+                <i class="fas fa-globe"></i>
+                <h3>المرصد البيئي</h3>
+                <p>متابعة المشاريع البيئية وتقييم الأثر</p>
+            </a>
+            <a href="https://emap-iraq.org/others/about-us" target="_blank" class="icon">
+                <i class="fas fa-map"></i>
+                <h3>المرصد الحكومي</h3>
+                <p>رصد وتحليل الأداء الحكومي</p>
+            </a>
+            <a href="https://point-iraq.org/" target="_blank" class="icon">
+                <i class="fas fa-bullseye"></i>
+                <h3>POINT العراق</h3>
+                <p>تعزيز الشفافية والحوكمة</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- الأخبار -->
+    <section id="news">
+        <h2>أحدث الأخبار</h2>
+        <div class="news-container">
+            <div class="swiper news-swiper">
+                <div class="swiper-wrapper">
+                    <!-- سيتم إضافة الأخبار ديناميكيًا عبر JavaScript -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ورش العمل -->
+    <section id="workshops">
+        <h2>ورش العمل</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- سيتم إضافة ورش العمل ديناميكيًا عبر JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section id="contact">
+        <h2>تواصل مع فريقنا</h2>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="لينكد إن"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2023 جميع الحقوق محفوظة لمنصة تواصل الشبابية</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
